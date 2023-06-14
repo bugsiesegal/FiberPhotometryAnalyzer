@@ -25,9 +25,9 @@ class AutoEncoderTest(unittest.TestCase):
             import torch
             import numpy as np
             autoencoder = AutoEncoder(100, 10)
-            autoencoder.fit(torch.randn(100))
+            autoencoder.fit(torch.randn(1000, 100))
             autoencoder = AutoEncoder(100, 10)
-            autoencoder.fit(np.random.randn(100))
+            autoencoder.fit(np.random.randn(1000, 100))
         except ImportError:
             self.fail("Was not able to import AutoEncoder")
         except TypeError:
