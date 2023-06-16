@@ -20,7 +20,7 @@ class FiberPhotometryDataset(Dataset):
 
     def __init__(self, time_series: np.ndarray | torch.Tensor, sampling_times: np.ndarray | torch.Tensor,
                  window_size: int, step_size: int,
-                 transform: Optional[Callable] = None) -> None:
+                 transform: Optional[Callable] = None, device='cpu') -> None:
         """
         Constructor for the FiberPhotometryDataset class.
 
@@ -45,6 +45,10 @@ class FiberPhotometryDataset(Dataset):
         self.time_series = time_series.unfold(0, window_size, step_size)
         self.sampling_times = sampling_times.unfold(0, window_size, step_size)
         self.transform = transform
+        self.device = device
+
+        self.time_series = self.time_series.to(device)
+        self.sampling_times = self.sampling_times.to(device)
 
     def normalize_windows(self) -> None:
         """
