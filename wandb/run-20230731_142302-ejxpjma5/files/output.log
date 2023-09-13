@@ -1,0 +1,108 @@
+/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/data.py:28: Warning: tnt file could not be processed
+  block = tdt.read_block(block_path)
+read from t=0s to t=923.18s
+read from t=0s to t=931.24s
+read from t=0s to t=927.54s
+read from t=0s to t=942.73s
+read from t=0s to t=924.52s
+read from t=0s to t=972.84s
+read from t=0s to t=912.11s
+read from t=0s to t=974.19s
+read from t=0s to t=941.05s
+/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/data.py:38: Warning: tnt file could not be processed
+  block = tdt.read_block(block_path)
+read from t=0s to t=1043.64s
+read from t=0s to t=1229.53s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name    | Type           | Params
+-------------------------------------------
+0 | encoder | AmazingEncoder | 103 K
+1 | decoder | AmazingDecoder | 107 K
+-------------------------------------------
+211 K     Trainable params
+0         Non-trainable params
+211 K     Total params
+0.846     Total estimated model params size (MB)
+
+Epoch 0:   0%|          | 0/2258 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train.py", line 44, in <module>
+    train()
+  File "/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train.py", line 33, in train
+    trainer.fit(autoencoder, datamodule=datamodule)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 973, in _run
+    results = self._run_stage()
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1016, in _run_stage
+    self.fit_loop.run()
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 201, in run
+    self.advance()
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 354, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 133, in run
+    self.advance(data_fetcher)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 218, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 185, in run
+    self._optimizer_step(kwargs.get("batch_idx", 0), closure)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 260, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 144, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/core/module.py", line 1256, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/core/optimizer.py", line 155, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/strategies/strategy.py", line 225, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/plugins/precision/amp.py", line 76, in optimizer_step
+    closure_result = closure()
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 140, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 126, in closure
+    step_output = self._step_fn()
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 307, in _training_step
+    training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 291, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/strategies/strategy.py", line 367, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/JAAEC/JAAEC.py", line 246, in training_step
+    x_hat = self(x)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/JAAEC/JAAEC.py", line 223, in forward
+    x = self.decoder(x)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/JAAEC/JAAEC.py", line 159, in forward
+    x = self.decoder(x, x)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 369, in forward
+    output = mod(output, memory, tgt_mask=tgt_mask,
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 717, in forward
+    x = self.norm2(x + self._mha_block(x, memory, memory_mask, memory_key_padding_mask, memory_is_causal))
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 735, in _mha_block
+    x = self.multihead_attn(x, mem, mem,
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1205, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/torch/nn/functional.py", line 5373, in multi_head_attention_forward
+    attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 246.00 MiB (GPU 0; 3.81 GiB total capacity; 3.00 GiB already allocated; 173.38 MiB free; 3.17 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

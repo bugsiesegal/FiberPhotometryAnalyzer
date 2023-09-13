@@ -1,0 +1,14 @@
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Configure stats pid to 133065
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/.config/wandb/settings
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/settings
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_behavior.py', 'program': '/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train_behavior.py'}
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_init.py:_log_setup():507] Logging user logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230819_144726-jjkxlz16/logs/debug.log
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_init.py:_log_setup():508] Logging internal logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230819_144726-jjkxlz16/logs/debug-internal.log
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_init.py:init():547] calling init triggers
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-19 14:47:26,409 INFO    MainThread:133065 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-08-19 14:47:29,020 INFO    MainThread:133065 [wandb_run.py:_config_callback():1283] config_cb None None {'input_shape': [1, 100, 8], 'embedding_shape': [1, 8], 'learning_rate': 0.0001, 'num_layers': 3, 'num_heads': 8}

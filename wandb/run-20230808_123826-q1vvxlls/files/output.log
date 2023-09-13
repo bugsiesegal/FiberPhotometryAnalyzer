@@ -1,0 +1,31 @@
+/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+  File "/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/data.py", line 99, in setup
+    data = pd.read_csv(path,
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+IsADirectoryError: [Errno 21] Is a directory: 'data/train/D2-75_saline_30-45min'

@@ -1,0 +1,17 @@
+/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name    | Type           | Params
+-------------------------------------------
+0 | encoder | AmazingEncoder | 209 K
+1 | decoder | AmazingDecoder | 223 K
+-------------------------------------------
+432 K     Trainable params
+0         Non-trainable params
+432 K     Total params
+1.731     Total estimated model params size (MB)

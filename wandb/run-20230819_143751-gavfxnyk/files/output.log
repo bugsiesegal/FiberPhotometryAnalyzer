@@ -1,0 +1,296 @@
+/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name    | Type           | Params
+-------------------------------------------
+0 | encoder | AmazingEncoder | 33.0 K
+1 | decoder | AmazingDecoder | 46.0 K
+-------------------------------------------
+79.0 K    Trainable params
+0         Non-trainable params
+79.0 K    Total params
+
+
+
+
+
+Epoch 0: 100%|██████████| 516/516 [00:08<00:00, 57.58it/s, v_num=xnyk]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2: 100%|██████████| 516/516 [00:11<00:00, 46.04it/s, v_num=xnyk]
+
+
+
+
+
+
+
+Epoch 3: 100%|██████████| 516/516 [00:12<00:00, 40.86it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 4: 100%|██████████| 516/516 [00:09<00:00, 52.54it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 5: 100%|██████████| 516/516 [00:10<00:00, 50.81it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 6: 100%|██████████| 516/516 [00:11<00:00, 46.75it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 7: 100%|██████████| 516/516 [00:09<00:00, 52.85it/s, v_num=xnyk]
+
+
+
+
+
+
+
+Epoch 8: 100%|██████████| 516/516 [00:12<00:00, 40.50it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 9: 100%|██████████| 516/516 [00:10<00:00, 49.92it/s, v_num=xnyk]
+
+
+
+
+
+
+
+
+Epoch 10: 100%|██████████| 516/516 [00:13<00:00, 38.59it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 11: 100%|██████████| 516/516 [00:10<00:00, 51.47it/s, v_num=xnyk]
+
+
+
+
+
+
+
+
+
+Epoch 13: 100%|██████████| 516/516 [00:08<00:00, 62.78it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 14: 100%|██████████| 516/516 [00:09<00:00, 55.12it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 15: 100%|██████████| 516/516 [00:09<00:00, 52.28it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 16: 100%|██████████| 516/516 [00:09<00:00, 52.32it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 17: 100%|██████████| 516/516 [00:09<00:00, 52.93it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 18: 100%|██████████| 516/516 [00:09<00:00, 52.55it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 19: 100%|██████████| 516/516 [00:09<00:00, 52.49it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 20: 100%|██████████| 516/516 [00:09<00:00, 51.97it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 21: 100%|██████████| 516/516 [00:10<00:00, 50.56it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 22: 100%|██████████| 516/516 [00:08<00:00, 59.22it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 23: 100%|██████████| 516/516 [00:10<00:00, 49.99it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 24: 100%|██████████| 516/516 [00:10<00:00, 49.44it/s, v_num=xnyk]
+
+
+
+
+Epoch 25: 100%|██████████| 516/516 [00:06<00:00, 75.62it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 26: 100%|██████████| 516/516 [00:09<00:00, 52.95it/s, v_num=xnyk]
+
+
+
+
+
+Epoch 27: 100%|██████████| 516/516 [00:09<00:00, 52.70it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 28: 100%|██████████| 516/516 [00:09<00:00, 52.89it/s, v_num=xnyk]
+
+
+
+
+
+
+
+Epoch 29: 100%|██████████| 516/516 [00:12<00:00, 39.90it/s, v_num=xnyk]
+
+
+
+
+
+
+
+Epoch 30: 100%|██████████| 516/516 [00:11<00:00, 44.08it/s, v_num=xnyk]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 33: 100%|██████████| 516/516 [00:09<00:00, 52.81it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 34: 100%|██████████| 516/516 [00:10<00:00, 49.92it/s, v_num=xnyk]
+
+
+
+
+
+
+
+Epoch 35: 100%|██████████| 516/516 [00:14<00:00, 36.66it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 36: 100%|██████████| 516/516 [00:12<00:00, 40.02it/s, v_num=xnyk]
+
+
+
+
+Epoch 37: 100%|██████████| 516/516 [00:07<00:00, 70.74it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 38: 100%|██████████| 516/516 [00:10<00:00, 49.27it/s, v_num=xnyk]
+
+
+
+
+Epoch 39: 100%|██████████| 516/516 [00:06<00:00, 85.28it/s, v_num=xnyk]
+
+
+
+
+Epoch 40: 100%|██████████| 516/516 [00:07<00:00, 68.12it/s, v_num=xnyk]
+
+
+
+
+
+
+Epoch 41: 100%|██████████| 516/516 [00:10<00:00, 50.34it/s, v_num=xnyk]
+
+
+
+
+

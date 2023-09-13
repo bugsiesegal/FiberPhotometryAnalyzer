@@ -1,0 +1,186 @@
+/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name    | Type           | Params
+-------------------------------------------
+0 | encoder | AmazingEncoder | 6.3 K
+1 | decoder | AmazingDecoder | 7.3 K
+-------------------------------------------
+13.5 K    Trainable params
+0         Non-trainable params
+13.5 K    Total params
+0.054     Total estimated model params size (MB)
+
+
+
+
+
+
+Epoch 0: 100%|██████████| 516/516 [00:11<00:00, 43.60it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3: 100%|██████████| 516/516 [00:10<00:00, 48.76it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 4: 100%|██████████| 516/516 [00:13<00:00, 37.86it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 5: 100%|██████████| 516/516 [00:13<00:00, 37.93it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 6: 100%|██████████| 516/516 [00:13<00:00, 38.49it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 7: 100%|██████████| 516/516 [00:13<00:00, 38.90it/s, v_num=oldp]
+
+
+
+
+
+
+Epoch 8: 100%|██████████| 516/516 [00:10<00:00, 49.92it/s, v_num=oldp]
+
+
+
+
+
+Epoch 9: 100%|██████████| 516/516 [00:09<00:00, 53.35it/s, v_num=oldp]
+
+
+
+
+
+
+Epoch 10: 100%|██████████| 516/516 [00:12<00:00, 42.55it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 11: 100%|██████████| 516/516 [00:13<00:00, 38.06it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 12: 100%|██████████| 516/516 [00:13<00:00, 37.72it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 13: 100%|██████████| 516/516 [00:13<00:00, 37.77it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 14: 100%|██████████| 516/516 [00:13<00:00, 37.87it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 15: 100%|██████████| 516/516 [00:13<00:00, 37.69it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 16: 100%|██████████| 516/516 [00:13<00:00, 37.89it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 17: 100%|██████████| 516/516 [00:13<00:00, 37.90it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 18: 100%|██████████| 516/516 [00:13<00:00, 37.76it/s, v_num=oldp]
+
+
+
+
+
+
+
+
+Epoch 19: 100%|██████████| 516/516 [00:13<00:00, 37.77it/s, v_num=oldp]
+
+
+
+
+
+
+
+Epoch 20: 100%|██████████| 516/516 [00:12<00:00, 42.72it/s, v_num=oldp]
+
+
+
+
+

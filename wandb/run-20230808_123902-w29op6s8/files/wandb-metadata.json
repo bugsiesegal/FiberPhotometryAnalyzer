@@ -1,0 +1,125 @@
+{
+    "os": "Linux-5.19.0-50-generic-x86_64-with-glibc2.35",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-08-08T16:39:02.621948",
+    "startedAt": "2023-08-08T16:39:02.172683",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train_behavior.py",
+    "codePath": "train_behavior.py",
+    "git": {
+        "remote": "https://github.com/bugsiesegal/FiberPhotometryAnalyzer.git",
+        "commit": "b3e83286a60f751aa3031bfbaca56e6fcee1a623"
+    },
+    "email": "bugsie@segalnyc.com",
+    "root": "/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer",
+    "host": "bugsie-Alienware-x14",
+    "username": "bugsie",
+    "executable": "/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2972.1559375000006,
+        "min": 400.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3836.534,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3665.367,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3963.229,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4204.46,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3952.334,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2568.2,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3867.32,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2977.026,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2223.05,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2965.605,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2611.312,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 491.635,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 928.423,
+            "min": 400.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "total": 933.9440612792969,
+        "used": 337.2083549499512
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.290626525878906
+    }
+}

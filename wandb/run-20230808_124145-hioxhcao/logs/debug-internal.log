@@ -1,0 +1,64 @@
+2023-08-08 12:41:45,381 INFO    StreamThr :7442 [internal.py:wandb_internal():86] W&B internal server running at pid: 7442, started at: 2023-08-08 12:41:45.381150
+2023-08-08 12:41:45,387 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: status
+2023-08-08 12:41:45,390 INFO    WriterThread:7442 [datastore.py:open_for_write():85] open: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/run-hioxhcao.wandb
+2023-08-08 12:41:45,391 DEBUG   SenderThread:7442 [sender.py:send():369] send: header
+2023-08-08 12:41:45,391 DEBUG   SenderThread:7442 [sender.py:send():369] send: run
+2023-08-08 12:41:45,588 INFO    SenderThread:7442 [dir_watcher.py:__init__():211] watching files in: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files
+2023-08-08 12:41:45,588 INFO    SenderThread:7442 [sender.py:_start_run_threads():1100] run started: hioxhcao with start time 1691512905.380389
+2023-08-08 12:41:45,589 DEBUG   SenderThread:7442 [sender.py:send_request():396] send_request: summary_record
+2023-08-08 12:41:45,590 INFO    SenderThread:7442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-08-08 12:41:45,596 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: check_version
+2023-08-08 12:41:45,597 DEBUG   SenderThread:7442 [sender.py:send_request():396] send_request: check_version
+2023-08-08 12:41:45,689 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: run_start
+2023-08-08 12:41:46,590 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_created():272] file/dir created: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/wandb-summary.json
+2023-08-08 12:41:46,809 DEBUG   HandlerThread:7442 [system_info.py:__init__():31] System info init
+2023-08-08 12:41:46,809 DEBUG   HandlerThread:7442 [system_info.py:__init__():46] System info init done
+2023-08-08 12:41:46,809 INFO    HandlerThread:7442 [system_monitor.py:start():181] Starting system monitor
+2023-08-08 12:41:46,810 INFO    SystemMonitor:7442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-08 12:41:46,811 INFO    SystemMonitor:7442 [interfaces.py:start():190] Started cpu monitoring
+2023-08-08 12:41:46,812 INFO    HandlerThread:7442 [system_monitor.py:probe():201] Collecting system info
+2023-08-08 12:41:46,813 INFO    SystemMonitor:7442 [interfaces.py:start():190] Started disk monitoring
+2023-08-08 12:41:46,814 INFO    SystemMonitor:7442 [interfaces.py:start():190] Started gpu monitoring
+2023-08-08 12:41:46,815 INFO    SystemMonitor:7442 [interfaces.py:start():190] Started memory monitoring
+2023-08-08 12:41:46,815 INFO    SystemMonitor:7442 [interfaces.py:start():190] Started network monitoring
+2023-08-08 12:41:46,821 ERROR   gpu       :7442 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-08-08 12:41:46,821 ERROR   gpu       :7442 [interfaces.py:monitor():144] Failed to sample metric: No data
+2023-08-08 12:41:46,824 DEBUG   HandlerThread:7442 [system_info.py:probe():195] Probing system
+2023-08-08 12:41:46,825 DEBUG   HandlerThread:7442 [system_info.py:_probe_git():180] Probing git
+2023-08-08 12:41:46,829 DEBUG   HandlerThread:7442 [system_info.py:_probe_git():188] Probing git done
+2023-08-08 12:41:46,829 DEBUG   HandlerThread:7442 [system_info.py:probe():240] Probing system done
+2023-08-08 12:41:46,829 DEBUG   HandlerThread:7442 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-50-generic-x86_64-with-glibc2.35', 'python': '3.10.11', 'heartbeatAt': '2023-08-08T16:41:46.824484', 'startedAt': '2023-08-08T16:41:45.371755', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train_behavior.py', 'codePath': 'train_behavior.py', 'git': {'remote': 'https://github.com/bugsiesegal/FiberPhotometryAnalyzer.git', 'commit': 'b3e83286a60f751aa3031bfbaca56e6fcee1a623'}, 'email': 'bugsie@segalnyc.com', 'root': '/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer', 'host': 'bugsie-Alienware-x14', 'username': 'bugsie', 'executable': '/home/bugsie/mambaforge/envs/FiberPhotometryAnalyzer/bin/python', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3149.9751250000004, 'min': 400.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 4256.993, 'min': 400.0, 'max': 4500.0}, {'current': 4295.18, 'min': 400.0, 'max': 4500.0}, {'current': 3899.877, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 4062.067, 'min': 400.0, 'max': 4500.0}, {'current': 3494.266, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3162.319, 'min': 400.0, 'max': 3300.0}, {'current': 2674.413, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 827.168, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 2571.125, 'min': 400.0, 'max': 3300.0}], 'disk': {'total': 933.9440612792969, 'used': 337.20917892456055}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.290626525878906}}
+2023-08-08 12:41:46,829 INFO    HandlerThread:7442 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-08 12:41:46,829 INFO    HandlerThread:7442 [system_monitor.py:probe():214] Publishing system info
+2023-08-08 12:41:46,829 DEBUG   HandlerThread:7442 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-08 12:41:46,830 DEBUG   HandlerThread:7442 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-08 12:41:46,830 DEBUG   HandlerThread:7442 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-08 12:41:47,588 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_created():272] file/dir created: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/conda-environment.yaml
+2023-08-08 12:41:47,589 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_created():272] file/dir created: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/requirements.txt
+2023-08-08 12:41:49,816 DEBUG   HandlerThread:7442 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-08 12:41:49,817 INFO    HandlerThread:7442 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-08 12:41:49,819 DEBUG   SenderThread:7442 [sender.py:send():369] send: files
+2023-08-08 12:41:49,819 INFO    SenderThread:7442 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-08-08 12:41:49,825 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-08 12:41:49,826 DEBUG   SenderThread:7442 [sender.py:send_request():396] send_request: stop_status
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: telemetry
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: telemetry
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:49,958 DEBUG   SenderThread:7442 [sender.py:send():369] send: telemetry
+2023-08-08 12:41:50,158 INFO    wandb-upload_0:7442 [upload_job.py:push():133] Uploaded file /tmp/tmp7bxe7o_0wandb/9z6xrnmh-wandb-metadata.json
+2023-08-08 12:41:50,589 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/conda-environment.yaml
+2023-08-08 12:41:50,590 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_created():272] file/dir created: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/wandb-metadata.json
+2023-08-08 12:41:50,590 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_created():272] file/dir created: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/output.log
+2023-08-08 12:41:51,198 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: status_report
+2023-08-08 12:41:52,590 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/output.log
+2023-08-08 12:41:53,066 DEBUG   SenderThread:7442 [sender.py:send():369] send: config
+2023-08-08 12:41:54,591 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/output.log
+2023-08-08 12:41:55,592 INFO    Thread-16 :7442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124145-hioxhcao/files/output.log
+2023-08-08 12:41:57,071 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: status_report
+2023-08-08 12:42:02,072 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: status_report
+2023-08-08 12:42:04,851 DEBUG   HandlerThread:7442 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-08 12:42:04,851 DEBUG   SenderThread:7442 [sender.py:send_request():396] send_request: stop_status

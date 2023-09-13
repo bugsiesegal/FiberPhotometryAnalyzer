@@ -1,0 +1,50 @@
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Configure stats pid to 9992
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/.config/wandb/settings
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/settings
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-08 12:45:09,111 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_behavior.py', 'program': '/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train_behavior.py'}
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:_log_setup():507] Logging user logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124509-oaa9gci1/logs/debug.log
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:_log_setup():508] Logging internal logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124509-oaa9gci1/logs/debug-internal.log
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:init():547] calling init triggers
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:init():596] starting backend
+2023-08-08 12:45:09,112 INFO    MainThread:9992 [wandb_init.py:init():600] setting up manager
+2023-08-08 12:45:09,115 INFO    MainThread:9992 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-08-08 12:45:09,118 INFO    MainThread:9992 [wandb_init.py:init():606] backend started and connected
+2023-08-08 12:45:09,119 INFO    MainThread:9992 [wandb_init.py:init():703] updated telemetry
+2023-08-08 12:45:09,122 INFO    MainThread:9992 [wandb_init.py:init():736] communicating run to backend with 60.0 second timeout
+2023-08-08 12:45:09,368 INFO    MainThread:9992 [wandb_run.py:_on_init():2176] communicating current version
+2023-08-08 12:45:09,402 INFO    MainThread:9992 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.15.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-08-08 12:45:09,402 INFO    MainThread:9992 [wandb_init.py:init():787] starting run threads in backend
+2023-08-08 12:45:12,396 INFO    MainThread:9992 [wandb_run.py:_console_start():2155] atexit reg
+2023-08-08 12:45:12,396 INFO    MainThread:9992 [wandb_run.py:_redirect():2010] redirect: SettingsConsole.WRAP_RAW
+2023-08-08 12:45:12,396 INFO    MainThread:9992 [wandb_run.py:_redirect():2075] Wrapping output streams.
+2023-08-08 12:45:12,396 INFO    MainThread:9992 [wandb_run.py:_redirect():2100] Redirects installed.
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_init.py:init():828] run started, returning control to user process
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_config.py:__setitem__():152] config set learning_rate = 1e-06 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f1a5039e740>>
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_run.py:_config_callback():1283] config_cb learning_rate 1e-06 None
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_config.py:__setitem__():152] config set window_size = 1000 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f1a5039e740>>
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_run.py:_config_callback():1283] config_cb window_size 1000 None
+2023-08-08 12:45:12,397 INFO    MainThread:9992 [wandb_config.py:__setitem__():152] config set embedding_size = 32 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f1a5039e740>>
+2023-08-08 12:45:12,398 INFO    MainThread:9992 [wandb_run.py:_config_callback():1283] config_cb embedding_size 32 None
+2023-08-08 12:45:12,398 INFO    MainThread:9992 [wandb_config.py:__setitem__():152] config set batch_size = 4 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f1a5039e740>>
+2023-08-08 12:45:12,398 INFO    MainThread:9992 [wandb_run.py:_config_callback():1283] config_cb batch_size 4 None
+2023-08-08 12:45:12,398 INFO    MainThread:9992 [wandb_config.py:__setitem__():152] config set num_workers = 16 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f1a5039e740>>
+2023-08-08 12:45:12,398 INFO    MainThread:9992 [wandb_run.py:_config_callback():1283] config_cb num_workers 16 None
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Configure stats pid to 9992
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/.config/wandb/settings
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/settings
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_behavior.py', 'program': '/home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/train_behavior.py'}
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_init.py:_log_setup():507] Logging user logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124512-15xaqy4o/logs/debug.log
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_init.py:_log_setup():508] Logging internal logs to /home/bugsie/PycharmProjects/FiberPhotometryAnalyzer/wandb/run-20230808_124512-15xaqy4o/logs/debug-internal.log
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_init.py:init():547] calling init triggers
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-08 12:45:12,407 INFO    MainThread:9992 [wandb_init.py:init():591] wandb.init() called when a run is still active
